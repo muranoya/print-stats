@@ -2,7 +2,7 @@
 
 CXX=c++
 CXXFLAGS += -O2 -Wall -std=c++11 -pthread
-LDFLAGS +=
+LDFLAGS += -Wl,--whole-archive -lpthread -Wl,--no-whole-archive -static
 
 TARGET=pstats
 
